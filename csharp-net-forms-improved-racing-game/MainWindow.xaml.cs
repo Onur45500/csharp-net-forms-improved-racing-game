@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using System.Windows.Threading;
 
 namespace csharp_net_forms_improved_racing_game
 {
@@ -19,9 +8,22 @@ namespace csharp_net_forms_improved_racing_game
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        DispatcherTimer gameTimer = new DispatcherTimer();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            MyCanvas.Focus();
+
+            gameTimer.Tick += GameLoop;
+            gameTimer.Interval = TimeSpan.FromMilliseconds(20);
+        }
+
+        private void GameLoop(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
