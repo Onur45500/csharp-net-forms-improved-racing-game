@@ -5,8 +5,13 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>csharp_net_forms_improved_racing_game</RootNamespace>
     <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
+    <UseWindowsForms>False</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>True</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
 
 </Project>
