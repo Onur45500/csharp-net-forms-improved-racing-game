@@ -6,5 +6,10 @@ namespace csharp_net_forms_improved_racing_game
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
