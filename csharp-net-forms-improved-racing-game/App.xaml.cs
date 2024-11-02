@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace csharp_net_wpf_racing_game
+namespace csharp_net_wpf_improved_racing_game
 {
     /// <summary>
     /// Interaction logic for App.xaml

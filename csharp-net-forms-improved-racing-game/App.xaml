@@ -1,7 +1,7 @@
-﻿<Application x:Class="csharp_net_wpf_racing_game.App"
+﻿<Application x:Class="csharp_net_wpf_improved_racing_game.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:csharp_net_wpf_racing_game"
+             xmlns:local="clr-namespace:csharp_net_wpf_improved_racing_game"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
