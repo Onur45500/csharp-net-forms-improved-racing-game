@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
@@ -13,6 +14,7 @@ namespace csharp_net_forms_improved_racing_game
 
         DispatcherTimer gameTimer = new DispatcherTimer();
         int speed = 15;
+        bool moveLeft, moveRight, gameOver, powerMode;
 
         public MainWindow()
         {
@@ -42,14 +44,33 @@ namespace csharp_net_forms_improved_racing_game
             }
         }
 
-        private void OnKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        private void OnKeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.Key == Key.Left)
+            {
+                moveLeft = true;
+            }
+            if (e.Key == Key.Right)
+            {
+                moveRight = true;
+            }
         }
 
-        private void OnKeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        private void OnKeyUp(object sender, KeyEventArgs e)
         {
+            if (e.Key == Key.Left)
+            {
+                moveLeft = false;
+            }
+            if (e.Key == Key.Right)
+            {
+                moveRight = false;
+            }
 
+            if (e.Key == Key.Enter && gameOver == true)
+            {
+                StartGame();
+            }
         }
 
 
